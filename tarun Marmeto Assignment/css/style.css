@@ -1,0 +1,413 @@
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url(../fonts/Gilroy-Regular.ttf) format('ttf'), url(../fonts/Gilroy-Regular.woff) format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url(../fonts/Gilroy-Semibold.ttf) format('ttf'), url(../fonts/Gilroy-Semibold.woff) format('woff');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'GillSans';
+    src: url(../fonts/GillSansC.woff) format('woff');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Athene';
+    src: url(../fonts/Athene.woff) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:hover a:visited {
+    text-decoration: none;
+}
+
+.main-wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.content-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85%;
+    padding-top: 32px;
+}
+
+.logo {
+    font-family: Goldman;
+    color: #232229;
+    font-size: 32px;
+}
+
+.header-logo span {
+    color: #FE6A3A;
+}
+
+.header-burger {
+    display: none;
+}
+
+.header-titles {
+    font-family: Gilroy-Regular;
+    color: #232229;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    border-color: #A3DAF5;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 200px;
+}
+
+.search-input {
+    border-color: #A3DAF5;
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+    border-style: solid;
+    color: rgb(214, 210, 210);
+    opacity: 0.5;
+}
+
+.button {
+    background-color: #A3DAF5;
+    border-width: none;
+    border-radius: 10px;
+    border-color: #A3DAF5;
+    border-style: hidden;
+    padding: 12px;
+}
+
+.header-titles li:not(:last-child) {
+    margin-right: 3.5vw;
+}
+
+.header-titles li {
+    position: relative;
+}
+
+.header-titles li a::before {
+    content: '';
+	position: absolute;
+	left: 0; bottom: -5px;
+	width: 0;
+	height: 1.5px;
+	background-color: #232229;
+}
+
+.header-titles li a:hover:before {
+	width: 100%;
+}
+
+.header-titles li a::before {
+	transition: width 0.35s;
+}
+
+a {
+    color: #232229;
+}
+
+.header-titles li:first-child {
+    font-family: Gilroy-SemiBold;
+    font-weight: 600;
+    position: relative;
+}
+
+.header-titles li:first-child img {
+    position: absolute;
+    top: -6px;
+    right: -13px;
+}
+
+.header-cart table:not(:last-child) {
+    border-collapse: collapse;
+    border: 3px solid #232229;
+}
+
+.header-cart table td:not(:last-child) {
+    font-family: Gilroy-SemiBold;
+    font-weight: 600;
+    font-size: 20px;
+    border: 1px solid #232229;
+    padding: 5px 10px 5px 10px;
+}
+
+.header-cart table td:first-child img {
+    display: flex;
+    cursor: pointer;
+}
+
+.mobile-buttons {
+    display: none;
+}
+
+.mobile-shopping-bag {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-cart table td .login {
+    margin-left: 19px;
+    display: flex;
+    cursor: pointer;
+}
+
+.main-wrapper hr {
+    opacity: 0.3;
+    margin-top: 32px;
+    position: absolute;
+    width: 92.5%;
+}
+
+.main-wrapper .vertical-line {
+    border-right: 0.5px solid #232229;
+    opacity: 0.15;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 5vw;
+    z-index: -1;
+}
+
+.social-link {
+    font-family: Gilroy-SemiBold;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 80px;
+    align-items: center;
+}
+
+.text-line {
+    position: relative;
+    margin-right: 19px;
+}
+
+.social-link .insta-line {
+    height: 2px;
+    width: 12vw;
+    background-color: #000;
+    opacity: 0.5;
+    margin-right: 19px;
+}
+
+.social-link img:last-child{
+    cursor: pointer;
+}
+
+.info-action-block:not(:last-child) {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-action-block .info-action-text .block-text {
+    font-family: Tahoma;
+    color: #232229;
+    font-size: 5.85vw;
+    min-width: 530px;
+}
+
+.info-action-block .info-action-text .block-text span:first-child {
+    padding-top: 18px;
+    border-bottom: 1px solid #232229;
+    border-top: 1px solid #232229;
+    position: relative;
+}
+
+.info-action-block .info-action-text .block-text span:last-child {
+    display: inline-block;
+    margin-top: 40px;
+    border-bottom: 1px solid #232229;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.info-action-block .info-action-text .block-text span:first-child img {
+    position: absolute;
+    top: -55%;
+    left: -100px;
+}
+
+.mobile-block-buttons {
+    display: none;
+}
+
+.info-action-block .info-action-text .block-text span:last-child img {
+    position: absolute;
+    top: -0.5vw;
+    left: -1.5vw;
+    width: 8%;
+}
+
+.info-action-block .info-action-text .block-buttons {
+    margin-top: 7.5vw;
+}
+
+.info-action-block .info-action-text .block-buttons .button{
+    margin-right: 2.5vw;
+    font-family: Gilroy-SemiBold;
+    font-size: 1.5vw;
+}
+
+.button:first-child {
+    background: #232229;
+    box-shadow: 6px 6px 0px #FE6A3A;
+    padding: 1vw 2.8vw;
+    color: #fff;
+}
+
+.button:last-child {
+    background: #fff;
+    border: 1px solid #000;
+    padding: 1vw 2.3vw;
+    color: #232229;
+}
+
+.button:first-child:hover {
+    background: #FE6A3A;
+    box-shadow: 6px 6px 0px #232229;
+    color:#232229;
+    transition: all .3s;
+}
+
+.button:last-child:hover {
+    background: #232229;
+    color:#fff;
+    transition: all .3s;
+}
+
+.fabric-effect {
+    position: absolute;
+    top: 170px;
+    width: 15%;
+}
+
+.info-action-block .info-action-image {
+    position: relative;
+}
+
+.info-action-block .info-action-image .main-img-sticker {
+    position: absolute;
+    top: 11vw;
+    left: -3vw;
+    right: 0;
+    bottom: 0;
+    width: 22%;
+}
+
+.info-action-block .info-action-image .main-img img {
+    margin-top: -20px;
+    max-width: 40vw;
+}
+
+@media (max-width: 1160px) {
+    .info-action-block .info-action-image .main-img img {
+        max-width: 100%;
+    }
+}
+
+.info-action-block:last-child {
+    margin-top: 38px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-action-block:last-child .info-action-block-child{
+    display: flex;
+}
+
+.info-action-block:last-child .info-action-block-child:first-child{
+    margin-right: 2vw;
+}
+
+.info-action-block:last-child .info-action-block-child:nth-child(2) {
+    margin-top: 1vw;
+    margin-right: 5vw;
+}
+
+.info-action-block:last-child .info-action-block-child .child-img {
+    width: 27vw;
+    height: auto;
+}
+
+.info-action-block:last-child .info-action-block-child:last-child .block-child-text{
+    color: #232229;
+    font-family: Gilroy-SemiBold;
+    font-size: 2.5vw;
+    word-wrap: break-word;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.info-action-block:last-child .info-action-block-child:last-child {
+    max-width: 23vw;
+    height: auto;
+    position: relative;
+}
+
+.info-action-block:last-child .info-action-block-child:last-child .block-child-text{
+    margin-top: 5vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-action-block:last-child .info-action-block-child:last-child:before,   .info-action-block:last-child .info-action-block-child:last-child:after {
+    position: absolute;
+    font-size: 5vw;
+    color: #A3DAF5;
+    font-family: GillSans;
+}
+.info-action-block:last-child .info-action-block-child:last-child::before {
+    top: 3vw;
+    left: 0;
+    content: "\201C";
+}
+.info-action-block:last-child .info-action-block-child:last-child::after {
+    bottom: 6vw;
+    right: 0;
+    content: "\201D";
+}
+
+.info-action-block:last-child .info-action-block-child:last-child .child-element-img {
+    display: flex;
+    width: 12vw;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 4vw;
+}
+
+.info-action-block:last-child .info-action-block-child:last-child .child-element-img:hover {
+    animation: headShake; 
+    animation-duration: 0.5s;
+}
+
+
+.info-action-block:last-child .info-action-block-child:last-child .block-child-text .block-text-effect-wrapper img{
+    position: absolute;
+    top: -4vw;
+    bottom: 0;
+    right: 0;
+    left: 24vw;
+    width: 12%;
+}
